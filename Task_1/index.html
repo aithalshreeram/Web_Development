@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+  </script>
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <nav class="navbar navbar-inverse" style="padding-top:2px;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">SPARKS Bank</a>
+          </div>
+          <ul class="nav navbar-nav  navbar-right">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="user.php">View Customers</a>
+            </li>
+            <li>
+              <a href="transaction.php?id=10001">Transfer Money</a>
+            </li>
+            <li>
+              <a href="history.php">Transaction History</a>
+            </li>
+            <li>
+              <a href="aboutus.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </nav>
+  </header>
+
+  <div id="p1">
+    <p>
+      No more waiting in the Long queues.........<br>Transfer the Money conveniently with the help of our SPARKS Banking
+      System,<br>A digital wallet platform and online payment system developed for the contactless transactions with
+      your mobiles.
+    </p>
+  </div>
+  <div class="container">
+    <div class="center">
+      <a data-toggle="popover" type="button" data-html="true" href="#">
+        <button class="btn btn-primary">Get Started</button></a>
+    </div>
+  </div>
+  <div id="popover-content" class="hide">
+    <div class="panel-group">
+      <div class="panel  panel-default">
+        <div class="panel-heading">
+          <a href="user.php">View Customers</a>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a href="transaction.php?id=10001">Transfer Money</a>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a href="history.php">Transaction History</a>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a href="aboutus.html">About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center mt-5">
+    <p> &copy; 2021 Designed by<br><strong>Shreeram Aithal</strong></p>
+  </footer>
+  <script>
+    $("[data-toggle=popover]").popover({
+      html: true,
+      content: function () {
+        return $('#popover-content').html();
+      }
+    });
+  </script>
+</body>
+
+</html>
