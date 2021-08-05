@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "id17257114_localhost";
-$password = "!R(Qf6J6YjFh_P7-";
-$database = "id17257114_xyzbank";
+$username = "username";
+$password = "password";
+$database = "database";
 //$conn = mysqli_connect($servername, $username, $password, $database);
 $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) {
