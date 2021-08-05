@@ -1,0 +1,61 @@
+body {
+  background: url(./images/background_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn:hover {
+  opacity: 1
+}
+
+.btn {
+  opacity: 0.5;
+}
+
+.panel {
+  width: 250px;
+}
+
+#p1 {
+  font-size: 23px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  padding-top: 50px;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  height: 200px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a:hover {
+  color: darkgray;
+}
+
+@media only screen and (max-width: 600px) {
+  #p1 {
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    padding-top: 50px;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 38%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+  }
+}

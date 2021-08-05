@@ -1,0 +1,39 @@
+body {
+  background-image: url(./images/background_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  border: none;
+  background: #ffffff;
+}
+
+button:hover {
+  background-color: #ffffff;
+  transform: scale(1.2);
+  color: black;
+}
+
+.table {
+  border: 2px solid gray;
+}
+
+tr,
+td,
+th {
+  border: 2px solid gray;
+}
+
+.form-control {
+  width: 40%;
+}
+
+th {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+td {
+  background-color: #ffffff;
+}
